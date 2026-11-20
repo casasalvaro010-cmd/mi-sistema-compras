@@ -1,0 +1,27 @@
+SISTEMA DE COMPRAS - PROYECTO EDUCATIVO
+
+Archivos:
+- index.html: pantalla de login.
+- pages/inicio.html: panel principal.
+- pages/compras.html: formulario para registrar compras.
+- pages/proveedores.html: lista de proveedores de ejemplo.
+- css/estilos.css: estilos principales.
+- css/responsive.css: adaptación a celulares y tabletas.
+- js/script.js: validación de login y funciones de compras.
+
+DATOS DE DEMOSTRACIÓN:
+Usuario: admin
+Contraseña: compras123
+
+CÓMO PROBAR:
+1. Descomprime la carpeta.
+2. Abre la carpeta MI-SISTEMA-COMPRAS en Visual Studio Code.
+3. Abre index.html en el navegador (recomendado: extensión Live Server).
+4. Ingresa los datos de demostración.
+5. En Compras, llena todos los campos y pulsa Guardar compra.
+
+IMPORTANTE:
+Es una demostración educativa de frontend. Los registros de compra se mantienen en memoria mientras la página de compras está abierta; no hay base de datos. El login JavaScript no es seguro para producción porque las credenciales están en el código.
+
+PUBLICACIÓN:
+Puedes subir los archivos a GitHub y conectar el repositorio a Vercel para publicar el sitio. Antes de entregar, prueba todas las páginas y toma capturas del sistema publicado.

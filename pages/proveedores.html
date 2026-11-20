@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proveedores | Sistema de Compras</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body class="app-body">
+  <header class="topbar">
+    <a class="brand" href="inicio.html"><span class="brand-icon small">SC</span><span>Sistema de Compras</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="inicio.html">Inicio</a><a href="compras.html">Compras</a><a class="active" href="proveedores.html">Proveedores</a>
+      <button class="nav-logout" data-logout>Cerrar sesión</button>
+    </nav>
+  </header>
+  <main class="dashboard">
+    <section class="page-heading"><p class="eyebrow">DIRECTORIO COMERCIAL</p><h1>Proveedores</h1><p class="muted">Lista de proveedores de ejemplo para la práctica.</p></section>
+    <section class="supplier-grid">
+      <article class="supplier-card"><div class="supplier-avatar">DC</div><h2>Distribuidora Central</h2><p>Productos de oficina y papelería</p><a href="compras.html" class="text-link">Registrar compra →</a></article>
+      <article class="supplier-card"><div class="supplier-avatar teal">CA</div><h2>Comercial Andina</h2><p>Materiales y artículos generales</p><a href="compras.html" class="text-link">Registrar compra →</a></article>
+      <article class="supplier-card"><div class="supplier-avatar orange">TB</div><h2>Tecnología Bolivia</h2><p>Accesorios y equipos tecnológicos</p><a href="compras.html" class="text-link">Registrar compra →</a></article>
+    </section>
+    <aside class="tip-box"><strong>Nota:</strong> los proveedores son datos ficticios de demostración. Puedes cambiarlos por los datos de tu proyecto.</aside>
+  </main>
+  <footer class="site-footer"><p>© 2026 Sistema de Compras · Proyecto académico</p></footer>
+</body>
+</html>

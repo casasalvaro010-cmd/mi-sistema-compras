@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compras | Sistema de Compras</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body class="app-body">
+  <header class="topbar">
+    <a class="brand" href="inicio.html"><span class="brand-icon small">SC</span><span>Sistema de Compras</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="inicio.html">Inicio</a><a class="active" href="compras.html">Compras</a><a href="proveedores.html">Proveedores</a>
+      <button class="nav-logout" data-logout>Cerrar sesión</button>
+    </nav>
+  </header>
+  <main class="dashboard">
+    <section class="page-heading"><p class="eyebrow">GESTIÓN DE INVENTARIO</p><h1>Registro de compras</h1><p class="muted">Añade una compra y consulta los registros de esta sesión.</p></section>
+    <section class="content-card">
+      <div class="section-heading"><div><h2>Nueva compra</h2><p class="muted">Completa todos los campos.</p></div></div>
+      <form id="purchaseForm" class="purchase-form" novalidate>
+        <div class="form-grid">
+          <div><label for="producto">Nombre del producto</label><input id="producto" type="text" placeholder="Ej.: Teclado USB"></div>
+          <div><label for="proveedor">Proveedor</label><select id="proveedor"><option value="">Selecciona un proveedor</option><option>Distribuidora Central</option><option>Comercial Andina</option><option>Tecnología Bolivia</option></select></div>
+          <div><label for="cantidad">Cantidad</label><input id="cantidad" type="number" min="1" step="1" placeholder="Ej.: 5"></div>
+          <div><label for="precio">Precio unitario (Bs)</label><input id="precio" type="number" min="0.01" step="0.01" placeholder="Ej.: 45.50"></div>
+        </div>
+        <p id="purchaseMessage" class="form-message" role="alert"></p>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">＋ Guardar compra</button><button class="btn btn-light" type="reset">Limpiar</button></div>
+      </form>
+    </section>
+    <section class="content-card">
+      <div class="section-heading"><div><h2>Compras registradas</h2><p class="muted">Los datos se conservan mientras la página permanezca abierta; esta versión es demostrativa.</p></div><span class="count-pill" id="purchaseCount">0 registros</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Producto</th><th>Proveedor</th><th>Cantidad</th><th>Precio unitario</th><th>Total</th><th>Acción</th></tr></thead><tbody id="purchaseTable"><tr><td colspan="6" class="empty-state">No hay compras registradas.</td></tr></tbody></table></div>
+      <div class="total-line">Total general: <strong id="grandTotal">Bs 0,00</strong></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 Sistema de Compras · Proyecto académico</p></footer>
+</body>
+</html>

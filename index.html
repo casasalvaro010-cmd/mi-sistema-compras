@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Sistema de Compras</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="login-body">
+  <main class="login-container">
+    <section class="login-card">
+      <div class="brand-icon">SC</div>
+      <p class="eyebrow">GESTIÓN COMERCIAL</p>
+      <h1>Sistema de Compras</h1>
+      <p class="muted">Ingresa tus datos para continuar</p>
+      <form id="loginForm" novalidate>
+        <label for="usuario">Usuario o correo electrónico</label>
+        <input id="usuario" name="usuario" type="text" placeholder="Ej.: admin" autocomplete="username">
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" name="contrasena" type="password" placeholder="Escribe tu contraseña" autocomplete="current-password">
+        <p id="loginMensaje" class="form-message" role="alert"></p>
+        <button class="btn btn-primary btn-full" type="submit">Ingresar al sistema</button>
+      </form>
+      <div class="demo-credentials">
+        <strong>Datos de demostración</strong>
+        <span>Usuario: <code>admin</code></span>
+        <span>Contraseña: <code>compras123</code></span>
+      </div>
+      <p class="small-note">Proyecto educativo elaborado con HTML5, CSS3 y JavaScript.</p>
+    </section>
+  </main>
+</body>
+</html>
